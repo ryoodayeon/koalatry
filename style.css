@@ -1,0 +1,164 @@
+body {
+    background-color: #cccccc;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 50vh;
+    height: 50vh;
+}
+
+.circle6 {
+    width: 20pt;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2vh; /* 'top: 95vh' 대신 'bottom' 사용 */
+    left: 2vh;
+    transform: translate(0%, 0%);
+}
+
+/* Step 1: circle1 클릭하면 circle2, circle3 보이게 */
+#toggle-circle1:checked ~ .circle2,
+#toggle-circle1:checked ~ .circle3 {
+    display: block;
+}
+
+/* Step 2: circle2 또는 circle3 클릭하면 circle4, circle5 보이게 */
+#toggle-circle2:checked ~ .circle4,
+#toggle-circle2:checked ~ .circle5,
+#toggle-circle3:checked ~ .circle4,
+#toggle-circle3:checked ~ .circle5 {
+    display: block;
+}
+
+
+.circle1 {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle2 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.circle3 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+
+.circle4 {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+
+.circle5 {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.koala-font {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 720px;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.O-filled {
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    line-height: 0.75em;
+    transform: translateX(-0.02em);
+}
+
+.o-filled {
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.55em;
+    height: 0.55em;
+    line-height: 0.55em;
+    transform: translateX(-0.02em);
+}
+
+.koala-font-kr {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 680px;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.ㅇ-filled-kr1 {
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.45em;
+    height: 0.45em;
+}
+
+.ㅇ-filled-kr2 {
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.55em;
+    height: 0.55em;
+    line-height: 0.55em;
+    transform: translateX(-0.02em);
+}
+
+.ㅇ-filled-kr3 {
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.55em;
+    height: 0.55em;
+    line-height: 0.55em;
+    transform: translateX(-0.02em);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koalatry2</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showFontPage() {
+            document.getElementById("main-content").style.display = "none";
+            document.getElementById("font-page").style.display = "block";
+        }
+
+        function goBack() {
+            document.getElementById("font-page").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <main id="primary" class="site-main">
+
+        <!-- 기존 컨텐츠 -->
+        <div id="main-content">
+            <div class="container">
+                <!-- circle6 클릭 시 font 페이지 표시 -->
+                <div class="circle6" onclick="showFontPage();"></div>
+
+                <input type="checkbox" id="toggle-circle1" hidden>
+                <label for="toggle-circle1" class="circle1"></label>
+
+                <input type="checkbox" id="toggle-circle2" hidden>
+                <input type="checkbox" id="toggle-circle3" hidden>
+
+                <label for="toggle-circle2" class="circle2 hidden"></label>
+                <label for="toggle-circle3" class="circle3 hidden"></label>
+
+                <div class="circle4 hidden"></div>
+                <div class="circle5 hidden"></div>
+            </div>
+        </div>
+
+        <!-- Font 페이지 (초기에는 숨김) -->
+        <div id="font-page" style="display: none; text-align:center;">
+            <h1 class="koala-font">
+                The K<span class="o-filled"></span>ala F<span class="o-filled"></span>nt is named after the feature 
+                <span class="o-filled"></span>f a k<span class="o-filled"></span>ala’s n<span class="o-filled"></span>se.
+            </h1>
+            <p class="koala-font">
+                In this f<span class="o-filled"></span>nt, every letter "<span class="O-filled"></span>" is fully filled in black, highlighting this unique feature. The f<span class="o-filled"></span>nt is versatile and can adapt t<span class="o-filled"></span> vari<span class="o-filled"></span>us design contexts while maintaining its distinct identity. These filled "<span class="O-filled"></span>" shapes als<span class="o-filled"></span> serve as a subtle visual m<span class="o-filled"></span>tif, creating a c<span class="o-filled"></span>nsistent and rec<span class="o-filled"></span>gnizable pattern thr<span class="o-filled"></span>ugh<span class="o-filled"></span>ut the text.
+            </p>
+
+            <p class="koala-font">
+                <span class="O-filled"></span>pp<span class="o-filled"></span>rtunity t<span class="o-filled"></span> <span class="o-filled"></span>pen a new <span class="o-filled"></span>asis where <span class="o-filled"></span>ne can <span class="o-filled"></span>verl<span class="o-filled"></span><span class="o-filled"></span>k the <span class="o-filled"></span>ceans, <span class="o-filled"></span>bserve the <span class="o-filled"></span>scillating shad<span class="o-filled"></span>ws <span class="o-filled"></span>f <span class="o-filled"></span>range trees, and <span class="o-filled"></span>rganize l<span class="o-filled"></span>ng, leisurely <span class="o-filled"></span>utings under a g<span class="o-filled"></span>lden <span class="o-filled"></span>rb. <span class="O-filled"></span>h, how <span class="o-filled"></span>ften we <span class="o-filled"></span>verl<span class="o-filled"></span><span class="o-filled"></span>k the <span class="o-filled"></span>pulent ar<span class="o-filled"></span>ma <span class="o-filled"></span>f <span class="o-filled"></span><span class="o-filled"></span>zing ch<span class="o-filled"></span>c<span class="o-filled"></span>late, the <span class="o-filled"></span>scillati<span class="o-filled"></span>n <span class="o-filled"></span>f water ar<span class="o-filled"></span>und a p<span class="o-filled"></span>lished st<span class="o-filled"></span>ne! We <span class="o-filled"></span>rnament, we c<span class="o-filled"></span>mp<span class="o-filled"></span>se, we c<span class="o-filled"></span><span class="o-filled"></span>rdinate, we f<span class="o-filled"></span>rge, we expl<span class="o-filled"></span>re. We dare t<span class="o-filled"></span> <span class="o-filled"></span>ffer <span class="o-filled"></span>thers <span class="o-filled"></span>rnate <span class="o-filled"></span>rati<span class="o-filled"></span>ns, <span class="o-filled"></span>pening h<span class="o-filled"></span>riz<span class="o-filled"></span>ns t<span class="o-filled"></span> fl<span class="o-filled"></span>ating <span class="o-filled"></span>mens. <span class="O-filled"></span>h <span class="o-filled"></span>ptimism, <span class="o-filled"></span>h s<span class="o-filled"></span>ftness, <span class="o-filled"></span>h g<span class="o-filled"></span>lden idleness!
+            </p>
+            <br>
+            <br>
+            
+        <!-- <div id="font-page" style="display: none; text-align:center;"></div>
+            <h1 class="koala-font-kr">
+                코<span class="ㅇ-filled-kr1">알</span>라 폰트는 코알라의 코의 특징을 본따서 만들었습니다.
+            </h1>
+            <p class="koala-font-kr">
+                이 폰트에서는 모든 “ㅇ(이응)”을 까맣게 채워, 코알라 코의 특징을 담았습니다. 이 폰트에서 모든 “ㅇ(이응)는 검게 채워져, 코알라 코의 특징을 강조합니다. 폰트는 다양한 디자인 환경에 유연하게 활용되며, 또렷한 개성과 식별력을 유지합니다. 채워진 "ㅇ(이응)" 형태는 도트처럼 자연스럽게 패턴을 이루어 텍스트 전반에 은은한 포인트로 작용합니다.
+            </p> -->
+        <div class="circle6" onclick="goBack();"></div>
+        </div>
+    </div>
+
+    </main>
+
+</body>
+</html>
